@@ -1,0 +1,117 @@
+body {
+  font-family: 'Satoshi', sans-serif;
+}
+
+body,
+ul,
+h1,
+h2 {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  list-style: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+nav {
+  margin: 2em 0;
+  position: relative;
+}
+
+nav .nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+nav .nav-list-item {
+  width: 100px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1rem;
+  margin: 0 0.5em;
+  position: relative;
+}
+
+nav .nav-list-item--contact div {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 0.5em;
+}
+
+nav .nav-list-item--contact div img {
+  margin-left: 6px;
+  width: 10px;
+  margin-bottom: 3px;
+}
+
+nav .nav-list-item--contact ul {
+  border: 1.5px solid #e7e7e7;
+  position: absolute;
+  width: 200%;
+  left: -50px;
+}
+
+nav .nav-list-item--contact ul li {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1em 0;
+  margin-left: 1.2em;
+  margin-right: 1.8em;
+}
+
+nav .nav-list-item--contact ul li img {
+  margin-right: 1em;
+  width: 32px;
+  height: 30px;
+}
+
+nav .nav-list-item:nth-child(1) {
+  position: absolute;
+  left: 0;
+  margin: 0;
+  text-align: left;
+}
+
+#connect-dropdown:hover + #connect-list {
+  display: block;
+}
+
+.nav-list-item--contact:hover #connect-list {
+  display: block;
+}
+/*# sourceMappingURL=main.css.map */
