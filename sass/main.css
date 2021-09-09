@@ -6,6 +6,10 @@ html {
   color: #333333;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 body,
 ul,
 h1,
@@ -37,7 +41,7 @@ li {
 
 header {
   height: 100vh;
-  background: #e0e3ebb7;
+  background: #e7e8eb46;
 }
 
 main {
@@ -48,7 +52,6 @@ main {
   font-size: 3.9rem;
   font-weight: 500;
   margin-top: 2.6em;
-  margin-bottom: 1.6em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -61,6 +64,10 @@ main {
 .section-heading :nth-of-type(2) {
   margin-top: -13px;
   margin-left: 60px;
+}
+
+footer {
+  height: 60vh;
 }
 
 nav {
@@ -331,6 +338,7 @@ nav .nav-list-item:nth-child(1) {
 }
 
 .projects {
+  margin-top: 7em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -357,7 +365,7 @@ nav .nav-list-item:nth-child(1) {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 1.5em;
+  margin-top: 3em;
 }
 
 .projects__project__info__title {
@@ -406,10 +414,69 @@ nav .nav-list-item:nth-child(1) {
 
 .projects__project2 .projects__project__info {
   width: 73%;
-  margin: 1.5em auto;
+  margin: 3em auto;
 }
 
 .projects__project3 {
   width: 70%;
+}
+
+.section-contact {
+  height: 100%;
+  position: relative;
+}
+
+.section-contact__messages {
+  font-size: 8rem;
+  font-weight: 900;
+  width: 4000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  white-space: nowrap;
+  -webkit-animation: slide 17s linear infinite;
+          animation: slide 17s linear infinite;
+}
+
+.section-contact__messages__message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 1000px;
+  bottom: 0;
+  margin: 0 0.5em;
+}
+
+.section-contact__messages__message::after {
+  content: '';
+  margin-left: 150px;
+  width: 45px;
+  height: 45px;
+  background: black;
+}
+
+@-webkit-keyframes slide {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-3200px);
+            transform: translateX(-3200px);
+  }
+}
+
+@keyframes slide {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-3200px);
+            transform: translateX(-3200px);
+  }
 }
 /*# sourceMappingURL=main.css.map */

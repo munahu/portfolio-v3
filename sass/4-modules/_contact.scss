@@ -1,0 +1,40 @@
+.section-contact {
+    height: 100%;
+    position: relative;
+
+    &__messages {
+        font-size: 8rem;
+        font-weight: 900;
+        width: 4000px;
+        display: flex;
+        white-space: nowrap;
+        animation: slide 17s linear infinite;
+        
+        &__message {
+            display: flex;
+            align-items: center;
+            width: 1000px;
+            bottom: 0;
+            margin: 0 0.5em;
+
+            &::after {
+                content: '';
+                margin-left: 150px;
+                width: 45px;
+                height: 45px;
+                background: black;
+            }
+        }
+    }
+}
+
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-3200px);
+    }
+}
