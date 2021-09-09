@@ -37,7 +37,7 @@ li {
 
 header {
   height: 100vh;
-  background: #f7f8fbb7;
+  background: #e0e3ebb7;
 }
 
 main {
@@ -46,9 +46,9 @@ main {
 
 .section-heading {
   font-size: 3.9rem;
+  font-weight: 500;
   margin-top: 2.6em;
   margin-bottom: 1.6em;
-  font-weight: 400;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -117,8 +117,8 @@ nav .nav-list-item--contact div img {
 }
 
 nav .nav-list-item--contact ul {
-  border: 1.5px solid #e7e7e7;
-  background: white;
+  -webkit-box-shadow: 1px 1px 5px 1px #c6c9d1b7;
+          box-shadow: 1px 1px 5px 1px #c6c9d1b7;
   position: absolute;
   width: 200%;
   left: -50px;
@@ -334,6 +334,9 @@ nav .nav-list-item:nth-child(1) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -355,7 +358,6 @@ nav .nav-list-item:nth-child(1) {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-top: 1.5em;
-  margin-left: 1.6em;
 }
 
 .projects__project__info__title {
@@ -378,8 +380,7 @@ nav .nav-list-item:nth-child(1) {
 }
 
 .projects__project1 {
-  width: calc(55% - 2em);
-  margin-right: 2em;
+  width: 50%;
 }
 
 .projects__project1 .projects__project__info__description {
@@ -387,25 +388,25 @@ nav .nav-list-item:nth-child(1) {
 }
 
 .projects__project2 {
+  width: 40%;
+}
+
+.projects__project2 .projects__project__img-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  width: 35%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .projects__project2 img {
-  width: 80%;
+  width: 70%;
 }
 
 .projects__project2 .projects__project__info {
-  width: 80%;
+  width: 73%;
+  margin: 1.5em auto;
 }
 
 .projects__project3 {
