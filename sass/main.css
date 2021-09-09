@@ -37,11 +37,35 @@ li {
 
 header {
   height: 100vh;
+  background: #f7f8fbb7;
+}
+
+main {
+  padding: 2em 0;
+}
+
+.section-heading {
+  font-size: 3.9rem;
+  margin-top: 2.6em;
+  margin-bottom: 1.6em;
+  font-weight: 400;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section-heading :nth-of-type(2) {
+  margin-top: -13px;
+  margin-left: 60px;
 }
 
 nav {
   position: relative;
-  height: 13%;
+  height: 13vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -135,7 +159,7 @@ nav .nav-list-item:nth-child(1) {
 }
 
 .hero {
-  height: 80%;
+  height: 87vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -304,5 +328,87 @@ nav .nav-list-item:nth-child(1) {
     width: 590px;
     height: 590px;
   }
+}
+
+.projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.projects__project {
+  margin-bottom: 8em;
+}
+
+.projects__project img {
+  width: 100%;
+}
+
+.projects__project__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 1.5em;
+  margin-left: 1.6em;
+}
+
+.projects__project__info__title {
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+
+.projects__project__info__description {
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  color: #505050;
+  font-size: 1.1rem;
+  font-weight: 300;
+  line-height: 1.7em;
+  letter-spacing: 0.3px;
+}
+
+.projects__project__info__stack {
+  font-size: 1rem;
+}
+
+.projects__project1 {
+  width: calc(55% - 2em);
+  margin-right: 2em;
+}
+
+.projects__project1 .projects__project__info__description {
+  width: 70%;
+}
+
+.projects__project2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 35%;
+}
+
+.projects__project2 img {
+  width: 80%;
+}
+
+.projects__project2 .projects__project__info {
+  width: 80%;
+}
+
+.projects__project3 {
+  width: 70%;
 }
 /*# sourceMappingURL=main.css.map */
